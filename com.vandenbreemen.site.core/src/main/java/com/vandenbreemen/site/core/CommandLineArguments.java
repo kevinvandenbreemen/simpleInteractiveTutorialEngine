@@ -43,7 +43,6 @@ public class CommandLineArguments {
         while(argIterator.hasNext()){
             String value = argIterator.next();
             if(value.startsWith("-")){
-                String constructed = bld.toString();
                 parseNextArgument(value, argIterator);  //  Go to the next arg!
                 return Optional.ofNullable(bld.toString());
             }
