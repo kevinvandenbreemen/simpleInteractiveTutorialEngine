@@ -19,6 +19,9 @@ public class CommandLineArguments {
     public CommandLineArguments(String[] strings) {
         this.parsedArguments = new HashMap<>();
         Iterator<String> iterator = Arrays.asList(strings).iterator();
+        if(!iterator.hasNext()){
+            return;
+        }
         parseNextArgument(iterator.next(), iterator);
     }
 
