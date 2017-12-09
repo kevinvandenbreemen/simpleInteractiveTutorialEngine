@@ -30,4 +30,9 @@ public class CommandLineArgumentsTest {
         assertEquals("Argument value expected", "This is a test", args.valueOf("c").get());
     }
 
+    @Test
+    public void testNoArgumentsGiven() throws Exception{
+        CommandLineArguments args = new CommandLineArguments(new String[]{});
+    }
+
 }
