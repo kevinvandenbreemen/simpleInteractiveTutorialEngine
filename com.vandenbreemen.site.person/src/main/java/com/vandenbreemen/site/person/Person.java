@@ -50,6 +50,9 @@ public class Person {
     }
 
     public String getFullName() {
+        if(this.firstName == null && this.lastName == null){
+            return "MissingNa";
+        }
         return this.firstName + " "+this.lastName;
     }
 }

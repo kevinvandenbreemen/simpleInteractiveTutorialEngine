@@ -35,4 +35,11 @@ public class PersonTest {
 
     }
 
+    @Test
+    public void testMissingName(){
+        assertEquals("System should gracefully handle missing names",
+                "MissingNa",
+                new Person.Builder().build().getFullName());
+    }
+
 }
