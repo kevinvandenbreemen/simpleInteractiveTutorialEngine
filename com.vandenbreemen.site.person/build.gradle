@@ -5,6 +5,7 @@ plugins {
 
 dependencies{
     testImplementation 'junit:junit:4.12'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
 }
 
 javaModule.name = 'com.vandenbreemen.site.person'
