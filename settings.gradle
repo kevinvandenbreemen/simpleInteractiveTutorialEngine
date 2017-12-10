@@ -1,0 +1,11 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+
+rootProject.name = "SimpleInteractiveTutorialEngine"
+
+include 'actors'
+include 'tale'
+include 'bears'
+include 'pigs'
+include 'fairy'
+include 'formula'
