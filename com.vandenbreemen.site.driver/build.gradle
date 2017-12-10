@@ -5,6 +5,7 @@ plugins {
 
 dependencies{
     testImplementation 'junit:junit:4.12'
+    implementation project(':com.vandenbreemen.site.core')
 }
 
 javaModule.name = 'com.vandenbreemen.site.driver'
