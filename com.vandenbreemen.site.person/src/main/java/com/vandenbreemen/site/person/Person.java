@@ -1,5 +1,7 @@
 package com.vandenbreemen.site.person;
 
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * A person/character in the engine
  */
@@ -50,7 +52,7 @@ public class Person {
     }
 
     public String getFullName() {
-        if(this.firstName == null && this.lastName == null){
+        if(StringUtils.isBlank(firstName) || StringUtils.isBlank(lastName)){
             return "MissingNa";
         }
         return this.firstName + " "+this.lastName;
