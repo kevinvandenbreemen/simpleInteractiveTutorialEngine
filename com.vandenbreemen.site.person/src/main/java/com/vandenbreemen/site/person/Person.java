@@ -1,7 +1,6 @@
 package com.vandenbreemen.site.person;
 
 import org.apache.commons.lang3.StringUtils;
-
 /**
  * A person/character in the engine
  */
