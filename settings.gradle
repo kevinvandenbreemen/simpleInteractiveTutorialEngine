@@ -1,0 +1,5 @@
+rootProject.name = "SimpleInteractiveTutorialEngine"
+
+include 'com.vandenbreemen.site.core'
+include 'com.vandenbreemen.site.driver'
+include 'com.vandenbreemen.site.person'
